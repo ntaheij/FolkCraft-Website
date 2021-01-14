@@ -46,6 +46,7 @@ $(document).ready(() => {
 				$('.spelers').html('speler');
 			} else {
 				$('.spelers').html('speler');
+			}
 		} else {
 			$('.playercount').html("Server isn't online!");
 		}
@@ -59,6 +60,7 @@ $(document).ready(() => {
 					$('.spelers').html('speler');
 				} else {
 					$('.spelers').html('spelers');
+				}
 			} else {
 				$('.playercount').html("Server isn't online!");
 			}
