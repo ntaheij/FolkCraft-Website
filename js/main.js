@@ -53,7 +53,7 @@ $(document).ready(() => {
 	});
 
 	setInterval(() => {
-		$.get(`https://mcapi.us/server/status?ip=${ip}&port=${port}`, (result) => {
+		$.get(`https://mcapi.us/server/status?ip=${ip}`, (result) => {
 			if (result.online) {
 				$('.sip').html(result.players.now);
 				if (result.players.now === 1) {
@@ -65,5 +65,5 @@ $(document).ready(() => {
 				$('.playercount').html("Server isn't online!");
 			}
 		});
-	}, 500);
+	}, 1000);
 });
